@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* common css start */
+ a{
+ text-decoration: none; 
+ }
+ ul,ol{
+  list-style: none;
+ }
+
+ .container{
+  width: 1408px; 
+   /* height: 300px; */
+  /* background-color: red; */
+ 
+ /* margin and width must in container. Normally there is no Height and Background color in container */
+ margin: 0 auto;
+ }
+ .box{
+   display: flex;
+   align-items: center;
+    
+ }
+ 
+/* common css end */
+
+/* ===== Navbar part start=== */
+ nav{
+  background-color: #F8FDFE;
+  padding: 30px 0;
+ }
+.logo-part{
+  width: 20%;
+ }
+ .menu-part{
+   width: 60%;
+ }
+ .button-part{
+   width: 20%;
+   text-align: right; 
+ }
+ 
+ nav .menu-part ul{
+   display: flex;
+   column-gap: 48px;
+   justify-content: center;
+ }
+ 
+ nav .menu-part ul a{
+   font-size: 18px;
+   color: #29313D;
+   font-weight: 600;
+   font-family: "Open Sans", serif;
+   transition: .4s;
+ }
+ nav .menu-part ul a:hover{
+  color: blueviolet; 
+ }
+ nav .menu-part ul li i{
+  margin-left: 3px;
+ }
+ nav .button-part a {
+   background-color: blueviolet;
+   padding: 18px 28px;
+   border-radius: 15px;
+   font-family: "Nunito", serif;
+   color: white;
+   font-size: 18px;
+   font-weight: 600;
+   transition: .4s;
+   border: 1px solid transparent;
+ }
+ nav .button-part a:hover{
+  background-color: transparent;
+  color: black;
+  border: 1px solid blueviolet;
+ }
+
+/* ===== Navbar part end ===== */
+
+ /* === Banner part start=== */
+ .banner{
+  background-color: #F8FDFE ;
+   padding: 200px 0;
+  position: relative;
+ }
+.banner .background{
+  /* width: 100%;  */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.banner .background img{
+    width: 100%;  
+  
+}
+.banner .background-left{
+ position: absolute;
+ top: 100px;
+ left: 10%;
+}
+.banner .background-right{
+position: absolute;
+top: 100px;
+right:10%;
+}
+.banner .background-top{
+ position: absolute;
+ top: 50px;
+ left: 35%;
+}
+.banner h1{
+  width: 464px;
+  font-size: 64px;
+  font-weight: 900;
+  color: #1D354F;
+  margin: 0 400px;
+}
+
+.banner p{
+  width: 464px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1D354F;
+  margin: 0 400px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.button2 a{
+  width: 20%;
+  background-color: blueviolet;
+  padding: 18px 28px;
+  border-radius: 15px;
+  font-family: "Nunito", serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: .4s;
+  border: 1px solid transparent;
+  margin: 0 400px;
+}
+ .button2 a:hover{
+  background-color: transparent;
+  color: black;
+  border: 1px solid blueviolet;
+}
+/* === Banner Part End=== */
