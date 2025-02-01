@@ -48,14 +48,14 @@
    justify-content: center;
  }
  
- nav .menu-part ul li a{
+ nav .menu-part ul a{
    font-size: 18px;
    color: #29313D;
    font-weight: 600;
    font-family: "Open Sans", serif;
    transition: .4s;
  }
- nav .menu-part ul li a:hover{
+ nav .menu-part ul a:hover {
   color: blueviolet; 
  }
  nav .menu-part ul li i{
@@ -87,7 +87,7 @@
   position: relative;
  }
 .banner .background{
-  /* width: 100%;  */
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 0;
@@ -148,3 +148,8 @@ right:10%;
   border: 1px solid blueviolet;
 }
 /* === Banner Part End=== */
+.heading{
+  font-size: 70px;
+  background-color: red;
+  color: white;
+}
