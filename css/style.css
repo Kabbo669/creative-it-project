@@ -48,14 +48,14 @@
    justify-content: center;
  }
  
- nav .menu-part ul a{
+ nav .menu-part ul li a{
    font-size: 18px;
    color: #29313D;
    font-weight: 600;
    font-family: "Open Sans", serif;
    transition: .4s;
  }
- nav .menu-part ul a:hover{
+ nav .menu-part ul li a:hover{
   color: blueviolet; 
  }
  nav .menu-part ul li i{
@@ -142,7 +142,7 @@ right:10%;
   border: 1px solid transparent;
   margin: 0 400px;
 }
- .button2 a:hover{
+ .button2 a:hover {
   background-color: transparent;
   color: black;
   border: 1px solid blueviolet;
