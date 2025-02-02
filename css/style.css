@@ -154,33 +154,50 @@ right:10%;
   border: 1px solid blueviolet;
 }
 /* === Banner Part End=== */
-.heading{
-  font-size: 70px;
-  background-color: red;
-  color: white;
-  text-align: center;
-}
+
 .liOne{
   position: relative;
 }
 .ultwo{
   display: flex;
   flex-direction: column;
-  background-color: red;
-  padding: 40px 20px;
+  background-color: #95a5a6;
   position: absolute;
-  top: 0;
-  left: -40px;
+  top: 60px;
+  left: -30px;
   opacity: 0;
   transition: 1s;
-  visibility: hidden;
+   visibility: hidden; 
 }
 .ultwo li{
-  padding: 40px 20px;
+  padding: 20px 20px;
   
 }
-.liOne:hover .ultwo{
+  .liOne:hover .ultwo{
  opacity: 1;
  visibility: visible;
- top: 40px;
+ top: 30px;
+} 
+.liTwo{
+  position: relative;
 }
+.ulThree{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60%;
+  left: 120%;
+  background-color:#81ecec;
+  transition: 1s;
+  opacity: 0;
+  visibility: hidden;
+}
+.ulThree li{
+  padding: 10px 30px;
+}
+ .liTwo:hover .ulThree{
+  opacity: 1;
+  visibility: visible;
+  top: 45%;
+  left: 100%;
+} 
