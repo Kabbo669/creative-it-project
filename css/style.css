@@ -36,16 +36,21 @@
  }
  .menu-part{
    width: 60%;
+   position: relative;
+   z-index: 4;
  }
  .button-part{
    width: 20%;
-   text-align: right; 
+   text-align: right;
+   position: relative; 
+   z-index: 5;
  }
  
  nav .menu-part ul{
    display: flex;
    column-gap: 48px;
    justify-content: center;
+
  }
  
  nav .menu-part ul a{
@@ -60,6 +65,7 @@
  }
  nav .menu-part ul li i{
   margin-left: 3px;
+ 
  }
  nav .button-part a {
    background-color: blueviolet;
@@ -71,11 +77,12 @@
    font-weight: 600;
    transition: .4s;
    border: 1px solid transparent;
+
  }
  nav .button-part a:hover{
   background-color: transparent;
   color: black;
-  border: 1px solid blueviolet;
+  border: 1px solid blueviolet
  }
 
 /* ===== Navbar part end ===== */
@@ -92,10 +99,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-}
-.banner .background img{
-    width: 100%;  
-  
+  z-index: 1;
 }
 .banner .background-left{
  position: absolute;
@@ -141,6 +145,8 @@ right:10%;
   transition: .4s;
   border: 1px solid transparent;
   margin: 0 400px;
+  position: relative;
+  z-index: 6;
 }
  .button2 a:hover {
   background-color: transparent;
@@ -152,4 +158,29 @@ right:10%;
   font-size: 70px;
   background-color: red;
   color: white;
+  text-align: center;
+}
+.liOne{
+  position: relative;
+}
+.ultwo{
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  padding: 40px 20px;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  opacity: 0;
+  transition: 1s;
+  visibility: hidden;
+}
+.ultwo li{
+  padding: 40px 20px;
+  
+}
+.liOne:hover .ultwo{
+ opacity: 1;
+ visibility: visible;
+ top: 40px;
 }
